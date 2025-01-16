@@ -28,17 +28,29 @@ function MessagePost(props) {
     const now = formatStandardTime(new Date()); // 当前时间
 
 
-
+    //检测用户名与信息不为空，否则弹出信息
     const handleMessagePostClick = () => {
-        const newMessage = {
-            sender: props.username,
-            content: inputValue,
-            time: now,
-            ip: ip
+        if (inputValue === "" && props.username === "") {
+            alert("用户名与输入信息为空！")
         }
-        props.setMessages([...props.messages, newMessage])
-        setInputValue("")
-        console.log(props.messages)
+        else if (inputValue === "") {
+            alert("输入信息为空！")
+            return
+        }
+        else if (props.username === "") {
+            alert("用户名为空！")
+        }
+        else {
+            const newMessage = {
+                sender: props.username,
+                content: inputValue,
+                time: now,
+                ip: ip
+            }
+            props.setMessages([...props.messages, newMessage])
+            setInputValue("")
+            console.log(props.messages)
+        }
     }
     return (<div>
         <input
@@ -50,7 +62,7 @@ function MessagePost(props) {
         <button
             onClick={handleMessagePostClick}
         >
-            Post
+            发送
         </button>
     </div>)
 };

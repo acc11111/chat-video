@@ -1,0 +1,25 @@
+.u-HistoryMessageShow-container{
+    border: 1;
+    background-color:cornflowerblue;
+    height: 100vmin;
+    width: 400px;
+    overflow-y: scroll;
+    overflow-x:visible;
+}
+
+.u-HistoryMessageShow-container .u-HistoryMessageShow-single-container .info-container{
+    color: black;
+
+
+}
+
+.u-HistoryMessageShow-container .u-HistoryMessageShow-single-container .content-container{
+    border: 5px solid;
+    border-radius: 15px;
+    box-shadow: 1px ;
+    overflow-y: auto;
+    height: auto;
+    width: 370px;
+    border-color:chocolate;
+}
+

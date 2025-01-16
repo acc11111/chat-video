@@ -11,11 +11,11 @@ function Chat() {
     const [messages, setMessages] = useState([])
 
 
-    return (<>
+    return (<div className='u-Chat-container'>
         <SetUsername username={username} setUsername={setUsername} />
         <HistoryMessageShow messages={messages} setMessages={setMessages} />
         <MessagePost username={username} setMessages={setMessages} messages={messages} />
-    </>)
+    </div>)
 };
 
 export default Chat
