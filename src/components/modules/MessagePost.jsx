@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
 import { useEffect } from 'react';
+import './MessagePost.css'
 
 
 function MessagePost(props) {
@@ -52,14 +53,14 @@ function MessagePost(props) {
             console.log(props.messages)
         }
     }
-    return (<div>
-        <input
+    return (<div className='u-MessagePost-container'>
+        <input className='u-MessagePost-input'
             type="text"
             placeholder='Enter your message'
             value={inputValue}
             onChange={(e) => setInputValue(e.target.value)}
         />
-        <button
+        <button className='u-MessagePost-button'
             onClick={handleMessagePostClick}
         >
             发送

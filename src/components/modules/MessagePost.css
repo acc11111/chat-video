@@ -1,0 +1,35 @@
+.u-MessagePost-container{
+    border: none;
+    width: 100%;
+    height: auto;
+    display: flex;
+    background-color: #F7F7F7; /* 微信背景色 */
+    margin-top: 0;
+    box-shadow: none;
+    padding: 10px; /* 内边距 */
+    border-radius: 10px; /* 圆角 */
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1); /* 阴影效果 */
+}
+
+.u-MessagePost-input{
+    font-size: 1em;
+    border-radius: 5px;
+    flex: 7;
+    border: 1px solid #E5E5E5; /* 边框颜色 */
+    padding: 10px; /* 内边距 */
+    background-color: #FFFFFF; /* 输入框背景色 */
+    color:#000;
+}
+
+.u-MessagePost-button{
+    flex: 3; 
+    background-color: #09BB07; /* 微信绿色 */
+    color: #FFFFFF; /* 按钮文字颜色 */
+    border: none; /* 无边框 */
+    border-radius: 5px; /* 圆角 */
+    margin-left: 10px; /* 左边距 */
+    cursor: pointer; /* 鼠标指针 */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
