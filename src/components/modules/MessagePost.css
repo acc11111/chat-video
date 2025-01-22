@@ -1,8 +1,8 @@
 .u-MessagePost-container{
-    border: none;
-    width: 100%;
+    width: 90%;
     height: auto;
     display: flex;
+    border: 1px dashed #d9d9d9;
     background-color: #F7F7F7; /* 微信背景色 */
     margin-top: 0;
     box-shadow: none;
@@ -12,6 +12,7 @@
 }
 
 .u-MessagePost-input{
+    border: 1px dashed transparent;
     font-size: 1em;
     border-radius: 5px;
     flex: 7;

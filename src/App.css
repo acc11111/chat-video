@@ -1,9 +1,8 @@
 #root {
-  max-width: 1280px;
+  width: 100%;
   margin: 0 auto;
-  padding: 2rem;
   text-align: center;
-  background-color: white;
+  background-color: #F7F7F7; /* 微信背景色 */
 }
 
 .logo {
@@ -42,7 +41,10 @@
   color: #888;
 }
 
-.u-App-container{
-  display:flex;
+.u-App-container {
+  display: flex;
   flex-direction: row;
+  height: 100%;
+  flex-wrap: wrap;
 }
+

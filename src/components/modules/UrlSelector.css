@@ -1,0 +1,65 @@
+.u-UrlSelector-container {
+    flex:1;
+    width: 90%;
+    height: auto;
+    display: flex;
+    border: 1px dashed #d9d9d9;
+    background-color: #F7F7F7; /* 微信背景色 */
+    margin-top: 0;
+    box-shadow: none;
+    padding: 10px;
+    border-radius: 10px; /* 圆角 */
+    /* box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1); 阴影效果 */
+}
+
+.u-UrlSelector-input{
+    cursor: pointer;
+    height: 100%;
+    border: 1px dashed transparent;
+    padding: auto;  
+    font-size: 3em; /* 字体变大 */
+    border-radius: 5px;
+    flex: 7;
+    border: 0px;
+    padding: 0px;
+    background-color: #FFFFFF; /* 输入框背景色 */
+    color:#000;
+}
+
+.u-UrlSelector-button{
+    height: 100%;
+    flex: 3; 
+    background-color: #09BB07; /* 微信绿色 */
+    color: #FFFFFF; /* 按钮文字颜色 */
+    border: none; /* 无边框 */
+    border-radius: 5px; /* 圆角 */
+    margin-left: 10px; /* 左边距 */
+    cursor: pointer; /* 鼠标指针 */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.u-UrlSelector-link-container {
+    flex: 1;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center; /* 垂直居中 */
+    margin-top: 10px; /* 上边距 */
+}
+
+.u-UrlSelector-link-container a {
+    text-decoration: none; /* 去掉下划线 */
+    color: #09BB07; /* 微信绿色 */
+    font-size: 1em;
+    text-align: center; /* 文字居中 */
+    padding: 10px 20px; /* 内边距 */
+    border-radius: 5px; /* 圆角 */
+    transition: background-color 0.3s; /* 背景色过渡效果 */
+    border: 1px dashed #d9d9d9;
+}
+
+.u-UrlSelector-link-container a:hover {
+    background-color: #F7F7F7; /* 悬停背景色 */
+}

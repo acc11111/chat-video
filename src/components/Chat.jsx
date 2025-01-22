@@ -5,7 +5,7 @@ import MessagePost from './modules/MessagePost'
 import './Chat.css'
 
 //数据格式
-//messages = {sender:String,content:String,time:Date,ip:String}
+//messages = {sender:String,content:String,time:Date}
 
 function Chat() {
     const [username, setUsername] = useState("init-user")
@@ -14,7 +14,7 @@ function Chat() {
 
     return (<div className='u-Chat-container'>
         <SetUsername username={username} setUsername={setUsername} />
-        <HistoryMessageShow messages={messages} setMessages={setMessages} />
+        <HistoryMessageShow messages={messages} setMessages={setMessages} username={username} />
         <MessagePost username={username} setMessages={setMessages} messages={messages} />
     </div>)
 };

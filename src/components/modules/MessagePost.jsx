@@ -16,14 +16,7 @@ function MessagePost(props) {
         return `${year}-${month}-${day} ${hours}:${minutes}:${seconds}`; // 返回标准时间字符串
     };
 
-    const [ip, setIp] = useState("")
 
-    useEffect(() => {
-        fetch('https://api.ipify.org?format=json')
-            .then(response => response.json())
-            .then(data => setIp(data.ip))
-            .catch(error => console.error('Error fetching IP:', error));
-    }, []);
 
     // 示例使用
     const now = formatStandardTime(new Date()); // 当前时间
@@ -46,7 +39,6 @@ function MessagePost(props) {
                 sender: props.username,
                 content: inputValue,
                 time: now,
-                ip: ip
             }
             props.setMessages([...props.messages, newMessage])
             setInputValue("")
