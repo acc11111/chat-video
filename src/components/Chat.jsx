@@ -8,7 +8,7 @@ import './Chat.css'
 //messages = {sender:String,content:String,time:Date}
 
 function Chat() {
-    const [username, setUsername] = useState("init-user")
+    const [username, setUsername] = useState("")
     const [messages, setMessages] = useState([])
 
 
