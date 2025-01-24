@@ -11,19 +11,28 @@ function HistoryMessageShow(props) {
 
 
     return (
-        < div className='u-HistoryMessageShow-container'>
-            {props.messages.map((m, i) => {
-                return (
-                    <div
-                        className='u-HistoryMessageShow-single-container'
-                        key={i}
-                        style={{ backgroundColor: m.sender === props.username ? '#09BB07' : 'transparent', color: m.sender === props.username ? 'white' : 'black' }}
-                    >
-                        <p className='info-container'><b>{m.sender}</b> | <b>{m.time}</b></p>
-                        <p className='content-container'>{m.content}</p>
-                    </div>
-                )
-            })}
+        <div className='max-w-3xl mx-auto space-y-8 p-4' style={{ height: 'calc(100vh - 64px)', overflowY: 'auto' }}>
+            {props.messages.map((m, i) => (
+                <div
+                    key={i}
+                    className={`p-6 rounded-lg shadow-sm ${m.sender === props.username
+                        ? 'bg-green-500 text-white'
+                        : 'bg-white border border-gray-200'
+                        }`}
+                >
+                    {/* 发送者 + 时间 */}
+                    <p className={`text-sm font-semibold mb-2 ${m.sender === props.username ? 'text-white/80' : 'text-gray-500'
+                        }`}>
+                        {m.sender} | {m.time}
+                    </p>
+
+                    {/* 消息内容 */}
+                    <p className={`text-base leading-relaxed ${m.sender === props.username ? 'text-white' : 'text-gray-900'
+                        }`}>
+                        {m.content}
+                    </p>
+                </div>
+            ))}
         </div>
 
     )
